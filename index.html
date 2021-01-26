@@ -29,33 +29,56 @@
 # Current Challenges<br/>in Computational Literary Studies
 <br/>
 <hr/>
-<br/>Christof Schöch<br/>(TCDH, Trier University, Germany)
+<br/>Christof Schöch (Trier University)
 <br/><br/>
 <hr/>
-<p><strong><emph>CDH 2020</emph> | Shanghai Library | Oct 19-21 2020</strong></p>
+<p><strong>slides: <a href="https://dh-trier.github.io/cls/#/">dh-trier.github.io/cls/</a></strong></p>
+<p><strong><emph><a href="https://www.su.se/ike/english/about-us/events/digital-humanities-now-1.532177">Digital Humanities Now</emph> | Stockholm University | Jan 17-29 2021</a></strong></p>
 <hr/>
 <img height="60" data-src="img/basics/uni-trier.png">
 
+
 ::
 - Hello, everyone. 
-- Thank you for the invitation to this conference
-- I'm sorry I can only join you by videoconference
-- I will speak about "Computational Literary Studies" today
-- I know many of you are interested in Digital History
-- The challenges I will speak about are quite general,
-- so I hope my remarks will still be relevant to you
+- Thank you for the invitation to this wonderful conference
 
+--
+#### Thanks to everyone involved 
+<small>
+
+
+* Keli Du
+* Cora Rok
+* Julia Dudar
+* Maria Hinzmann
+* Benjamin Raue
+* Julia Röttgermann
+* Anne Klee
+* Katharina Dietz
+* Moritz Steffes
+* Maciej Eder
+* Carolin Odebrecht
+* Lou Burnard
+* Martina Scholger
+* Fotis Jannidis
+* Antonija Primorac
+* Roxana Patras
+* Katja Mihurco Poniz
+* and many more...
+
+</small>
 
 --
 ## Overview
-1. [Operationalization | 操作化](#/3)
-1. [Metadata | 元数据](#/4)
-1. [Diversity | 多样性](#/5)
-1. [Open Access | 开放获取](#/6)
+1. [Computational Literary Studies](#/3)
+1. [Operationalization](#/4)
+1. [Metadata](#/5)
+1. [Diversity](#/6)
+1. [Reproducibility](#/7)
 
 
 ::
-- I will briefly introduce the field of Computational Literary Studies
+- Before I get started with the four challenges, I would like to briefly introduce the field of Computational Literary Studies
 - And I will then speak about four major, high-level challenges I see for the field
 - I believe it is really important that these challenges continue to be addressed, going into the future
 - Computational Literary Studies (CLS) is a subfield of Digital Humanities concerned with using methods from Computer Science and Statistics for the investigation of literary texts. 
@@ -63,36 +86,55 @@
 - Research questions in CLS are in part those of established literary studies, in part those arising from the transposition of methods from Computer Science and Statistics into the literary domain. 
 
 
+--
+## Computational<br/>Literary Studies
+
+---
+### Many terms, one field? 
+* Stylometry
+* Literary and Linguistic Computing
+* Computational Stylistics 
+* Digital Literary Stylistics
+* Distant Reading
+* Computational Literary Studies
+
+---
+### Computational Literary Studies
+<img height="500" data-src="img/cls.jpg"></img>
+
+
+
 
 --
-## Challenge 1:<br/><br/>Operationalization<br/>操作化
+## Challenge 1:<br/><br/>Operationalization
 
 
 ---
-### Why is "operationalization" important?
-* Operationalization makes a research<br/> question or a hypothesis computable and verifiable <!-- .element: class="fragment" data-fragment-index="1" -->
-* Operationalization creates an explicit<br/> link between concepts and formal features <!-- .element: class="fragment" data-fragment-index="2" -->
+### What is meant by operationalization?
+* Creates an explicit<br/> link between concepts and formal features <!-- .element: class="fragment" data-fragment-index="1" -->
+* Makes a research<br/> question or a hypothesis computable and verifiable <!-- .element: class="fragment" data-fragment-index="2" -->
+* Creates increased complexity, mainly through decomposition <!-- .element: class="fragment" data-fragment-index="3" -->
+* But also makes that complexity more manageable <!-- .element: class="fragment" data-fragment-index="4" -->
+* Many examples <!-- .element: class="fragment" data-fragment-index="5" -->
+  * subgenres
+  * canonicity
+  * complexity
+  * distinctiveness
 
 
 ---
-### Challenges in operationalization 
-* Operationalization creates increased complexity <!-- .element: class="fragment" data-fragment-index="1" -->
-* But it also makes that complexity more manageable <!-- .element: class="fragment" data-fragment-index="2" -->
-
-
----
-### Example: "Keyness" in the *Zeta and Company* project
+### Example: "Distinctiveness"<br/>in the *Zeta and Company* project
 <img height="400" data-src="img/zeta-project.jpg"></img>
 <br/>https://zeta-project.eu/en/
 
 ::
-- This is a project about measures of keyness
-- "Keyness" refers to words, or other features, that are characteristic of a group of texts when comparing it to another group of texts
-- We want to model, implement, evaluate keyness
+- This is a project about measures of distinctiveness
+- Distinctiveness, also called "keyness" in linguistics, refers to words, or other features, that are characteristic of a group of texts when comparing it to another group of texts
+- We want to model, implement, evaluate, and use measures of distinctiveness
 
 
 ---
-### Crime fiction vs. science fiction
+### Subgenres of the contemporary French novel
 <b>crime fiction</b> (Gallimard, Série noire): <img height="180" data-src="img/serie-noire.jpg"></img>
 <br/>
 <b>science fiction</b> (Denoël, Présence du futur): <img height="180" data-src="img/presence-futur.jpg"></img>
@@ -104,44 +146,60 @@
 
 
 ---
-### What is keyness?
-* Concepts <!-- .element: class="fragment" data-fragment-index="1" -->
+### What is distinctiveness?
+* (Qualitative) concepts <!-- .element: class="fragment" data-fragment-index="1" -->
   * aboutness
-  * distinctiveness
   * salience
+  * discriminativity
   * etc.
-* measures <!-- .element: class="fragment" data-fragment-index="2" -->
+* (Quantitative) measures <!-- .element: class="fragment" data-fragment-index="2" -->
   * log-likelihood ratio
   * t-test
   * Burrows Zeta
   * etc. 
 
 ::
-- Concepts: 
+- (qualitative) concepts: 
 - Aboutness: words that express the content of the subgenres
-- Distinctiveness: words that help distinguish one subgenre from another
+- Discriminativity: words that help distinguish between subgenres
 - Salience: words that readers notice when reading novels from the subgenre
-- Measures
-- log-likelihood: compares frequencies across groups
-- t-test: compares frequency distibutions
-- Zeta: compares the dispersion of words
+- (quantitative) measures
+- log-likelihood (CL): compares frequencies across groups
+- t-test (Statistics): compares frequency distibutions
+- Zeta (CLS): compares the degree of dispersion of words
+
+
+---
+### Key issue: concepts vs. measures
+* What are the key statistical properties of the measures?
+* How do qualitative concepts and quantitative measures relate?
+* How do you evaluate measures for specific targets? 
+  * discriminativity: classification task
+  * salience: (comparison with reader survey)
+  * aboutness: (proportion of content words)
+
+::
 - **Key issue**: 
 - how do measures and concepts relate to each other?
 - t-test has a bias for function words, and is related to distinctiveness
 - Burrows Zeta has a bias for content words, and is related to aboutness
-- This needs to be clarified before using such measures.
+- How does this affect the results?
+- These properties need to be established before using such measures.
+- We do this through systematic evaluation with various techniques
+- Note that no direct gold standard is available
 
 
 --
-## Challenge 2:<br/><br/>Metadata<br/>元数据
+## Challenge 2:<br/><br/>Metadata
 
 ---
 ### Why is metadata crucial? 
 * Small, well-understood corpora:<br/>metadata is easy to generate, less needed <!-- .element: class="fragment" data-fragment-index="1" -->
 * Large, unexplored corpora:<br/>metadata is crucial, hard to generate <!-- .element: class="fragment" data-fragment-index="2" -->
-* Crucial for going beyond the canon <!-- .element: class="fragment" data-fragment-index="3" -->
-  * knowing the population: sampling
-  * interpreting quantitative results
+* Why is it so crucial?  <!-- .element: class="fragment" data-fragment-index="3" -->
+  * to know the population: sampling
+  * to go beyond the known canon
+  * for interpreting quantitative results
 
 ::
 - First wave of CLS used relatively small corpora (dozens, sometimes a few hundred texts)
@@ -160,7 +218,7 @@
   * setting: space, time
   * type: subgenre, etc.
   * content: themes, plot, protagonists
-  * properties: e.g. proportion of direct speech
+  * properties: e.g. proportion of direct speech, <br/>narrative perspective
 
 ::
 - First need: complete documentation of literary production (population)
@@ -189,7 +247,7 @@
 
 
 --
-## Challenge 3:<br/><br/>Diversity<br/>多样性
+## Challenge 3:<br/><br/>Diversity
 
 ::
 - The DH open up an opportunity for diversity
@@ -228,78 +286,69 @@
 - regarding the community we create in the project (name them)
 - Very important to me: diversity not for the people, but with the people! 
 - In this sense, this is really a "grass-roots" project
+- Digitization tends to be non-diverse (!): driven by canonicity, focused on few authors
 
 
 ---
-### Challenges
-* Digitization tends to be non-diverse (!) <!-- .element: class="fragment" data-fragment-index="1" -->
-  * driven by canonicity
-  * focused on few authors
-* Corpus building: "paradox of diversity" <!-- .element: class="fragment" data-fragment-index="2" -->
-  * support diversity of languages
-  * support diversity within each collection
+### Key challenge: the "diversity paradox"
+<a href="https://distantreading.github.io/ELTeC/"><img height="450" data-src="img/eltec.png"></img></a>
+<br/>https://distantreading.github.io/ELTeC/ and Schöch et al. (under review)
+
 
 ::
-- Digitization
-  - Digitization is driven by canonicity
-- Paradox
-  - We want to encourage a diversity of languages, including smaller literary traditions
-  - And we want to encourage a diverse corpus composition (women, non-canonized, early)
-  - But: for smaller languages, diverse composition is hard!
-  - So: by pushing on one side, we lose on the other side
-  - We need to balance both
+- Paradox: 
+- We want to encourage a diversity of languages, including smaller literary traditions
+- And we want to encourage a diverse corpus composition (women, non-canonized, early)
+- But: for smaller languages, diverse composition is hard!
+- So: by pushing on one side, we lose on the other side
+- We need to balance both
 
 
 
 --
-## Challenge 4:<br/><br/>Open Access<br/>开放获取
+## Challenge 4:<br/><br/>Reproducibility
 
 
 ---
-### Open Access
-* Open Access means  <!-- .element: class="fragment" data-fragment-index="1" -->
-  * the right to access, modify, analyse, redistribute materials
-  * with minimal technical, financial and legal obstacles 
-* Open Access concerns <!-- .element: class="fragment" data-fragment-index="2" -->
-  * scholarly publications
-  * primary sources (literary texts) 
-* Open Access is an essential component of Open Science <!-- .element: class="fragment" data-fragment-index="3" -->
-
-
----
-### Why is Open Access important?
-* Open Access enables research into our most recent cultural history <!-- .element: class="fragment" data-fragment-index="1" -->
-* Open Access is an essential component of Open Science <!-- .element: class="fragment" data-fragment-index="2" -->
-  * transparent
-  * reproducible
-  * sustainable  
-
-
----
-### A challenge in all our projects
-* Distant Reading <!-- .element: class="fragment" data-fragment-index="1" -->
-  * Focus determined by copyright: pre-1920 texts only
-  * this allows us to practice Open Science
-* Mining and Modeling Text <!-- .element: class="fragment" data-fragment-index="2" -->
-  * We rely on a copyright exception for Text Mining 
-  * But we can't publish the texts underlying our extracted metadata
-* Zeta and company <!-- .element: class="fragment" data-fragment-index="3" --> 
-  * 20th-century novels: we can't distribute our corpora
-  * limited transparency and reproducibility
-
----
-### Challenges of Open Access
-* Create a new balance
-  * between legitimate copyright interests
-  * and the benefits of excellent research for society
-* Create new institutional roles of academia
-  * As distributors of scholarly publications  
-  * As creators of digital resources
+### The reproducibility crisis
+<img height="450" data-src="img/replication_scientific-american.png"></img>
+<br/>[Roni Jackson, "Massive International Project...", 2015](https://www.scientificamerican.com/article/massive-international-project-raises-questions-about-the-validity-of-psychology-research/)
 
 ::
-- New balance
-- New roles
-- Also: work beyond academia
+- For years, there has been discussion of a reproducibility crisis in psychology or biomedicine
+- now, it is also relevant in computational linguistics and computer science 
+- For example, the NeurIPS conference now has a "reproducibility chair"
+- This is also becoming highly relevant to DH and CLS
+- Evidence of this is the Paper by Nan Z. Da, "The Computational Case agains CLS" (2019)
+
+
+---
+### A typology of reproducing research
+<img height="450" data-src="img/replication-typology.png"></img>
+<br/>(Schöch 2020)
+
+:: 
+- But what does reproducible research even mean? 
+- In CLS, there are lots of possible relations between previous and current researrch
+- One way to get a better grip of this issue is through a typology
+- We just focus on the left part (same research question)
+- But the data can be similar or different; the method can be similar or diffferent
+- In each configuration, there are different requirements
+- But essentiallly, making data and code freely available to others is crucial
+
+
+---
+### Consequences for CLS
+* Structurally encourage and facilitate sharing of corpora and code
+* Recognize corpus design and code maintenance as scholarly work
+* Develop solutions for sharing of in-copyright materials:<br/> "derived features/formats" (e.g. Hathi Trust Extracted Feature Dataset)
+* Develop reporting standards for research
+* But also: recognize the value of reproducing research (small steps!)
+
+::
+- Would love to hear from you 
+
+
 
 --
 ## Conclusion
@@ -307,13 +356,16 @@
 ---
 ### Four Challenges of CLS
 1. Operationalization: "deconstruction" of concepts and measures <!-- .element: class="fragment" data-fragment-index="1" -->
-2. Diversity: increase diversity in research objects and the research community <!-- .element: class="fragment" data-fragment-index="2" -->
-3. Metadata: generate metadata for very large corpora <!-- .element: class="fragment" data-fragment-index="3" -->
-4. Open Access: look beyond purely scholarly concerns <!-- .element: class="fragment" data-fragment-index="4" -->
+1. Metadata: generate metadata for very large corpora <!-- .element: class="fragment" data-fragment-index="2" -->
+1. Diversity: increase diversity in research objects and the research community; solve diversity paradox <!-- .element: class="fragment" data-fragment-index="3" -->
+1. Reproducibility: enable and encourage sharing of data, code, methods <!-- .element: class="fragment" data-fragment-index="4" -->
 
 
 ---
-# Thank you for your kind attention<br/><br/>谢谢您的关注
+# Thank you for your kind attention
+<br/><br/>
+<br/><br/>
+<br/><br/>
 <br/><br/>
 <br/><br/>
 <br/><br/>
