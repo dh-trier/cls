@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/332396772.svg)](https://zenodo.org/badge/latestdoi/332396772)
+[![DOI](https://zenodo.org/badge/4497555.svg)](https://zenodo.org/badge/latestdoi/4497555)
 
 # Current Challenges in Computational Literary Studies 
 
